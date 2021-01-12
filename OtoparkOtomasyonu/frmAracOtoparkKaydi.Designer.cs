@@ -31,6 +31,7 @@ namespace OtoparkOtomasyonu
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtTc = new DevExpress.XtraEditors.TextEdit();
             this.txtAd = new DevExpress.XtraEditors.TextEdit();
             this.txtSoyad = new DevExpress.XtraEditors.TextEdit();
@@ -57,6 +58,29 @@ namespace OtoparkOtomasyonu
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plakaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.markaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.seriDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.renkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.parkyeriDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aracotoparkkaydiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.aracotoparkDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.arac_otoparkDataSet1 = new OtoparkOtomasyonu.arac_otoparkDataSet1();
+            this.arac_otoparkDataSet2 = new OtoparkOtomasyonu.arac_otoparkDataSet2();
+            this.aracotoparkDataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.arac_otopark_kaydiTableAdapter = new OtoparkOtomasyonu.arac_otoparkDataSet1TableAdapters.arac_otopark_kaydiTableAdapter();
+            this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
+            this.btnListele = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.txtTc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoyad.Properties)).BeginInit();
@@ -68,6 +92,14 @@ namespace OtoparkOtomasyonu
             this.grupKişi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grupAraç)).BeginInit();
             this.grupAraç.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aracotoparkkaydiBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aracotoparkDataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arac_otoparkDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arac_otoparkDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aracotoparkDataSet2BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTc
@@ -132,7 +164,7 @@ namespace OtoparkOtomasyonu
             this.grupKişi.Controls.Add(this.txtTcs);
             this.grupKişi.Controls.Add(this.txtTelefon);
             this.grupKişi.Controls.Add(this.txtEmail);
-            this.grupKişi.Location = new System.Drawing.Point(27, 12);
+            this.grupKişi.Location = new System.Drawing.Point(12, 12);
             this.grupKişi.Name = "grupKişi";
             this.grupKişi.Size = new System.Drawing.Size(383, 309);
             this.grupKişi.TabIndex = 10;
@@ -313,30 +345,213 @@ namespace OtoparkOtomasyonu
             // 
             this.simpleButton1.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Location = new System.Drawing.Point(316, 338);
+            this.simpleButton1.Location = new System.Drawing.Point(14, 368);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(94, 29);
             this.simpleButton1.TabIndex = 12;
-            this.simpleButton1.Text = "Kayıt";
+            this.simpleButton1.Text = "Ekle";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // simpleButton2
             // 
             this.simpleButton2.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Location = new System.Drawing.Point(447, 338);
+            this.simpleButton2.Location = new System.Drawing.Point(647, 368);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(94, 29);
             this.simpleButton2.TabIndex = 13;
             this.simpleButton2.Text = "Geri";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
+            // groupControl1
+            // 
+            this.groupControl1.Controls.Add(this.dataGridView1);
+            this.groupControl1.Location = new System.Drawing.Point(12, 414);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(791, 154);
+            this.groupControl1.TabIndex = 14;
+            this.groupControl1.Text = "Kayıtlar";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tcDataGridViewTextBoxColumn,
+            this.adDataGridViewTextBoxColumn,
+            this.soyadDataGridViewTextBoxColumn,
+            this.telefonDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.plakaDataGridViewTextBoxColumn,
+            this.markaDataGridViewTextBoxColumn,
+            this.seriDataGridViewTextBoxColumn,
+            this.renkDataGridViewTextBoxColumn,
+            this.parkyeriDataGridViewTextBoxColumn,
+            this.tarihDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.aracotoparkkaydiBindingSource;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(2, 25);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(787, 127);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
+            // 
+            // tcDataGridViewTextBoxColumn
+            // 
+            this.tcDataGridViewTextBoxColumn.DataPropertyName = "tc";
+            this.tcDataGridViewTextBoxColumn.HeaderText = "tc";
+            this.tcDataGridViewTextBoxColumn.Name = "tcDataGridViewTextBoxColumn";
+            // 
+            // adDataGridViewTextBoxColumn
+            // 
+            this.adDataGridViewTextBoxColumn.DataPropertyName = "ad";
+            this.adDataGridViewTextBoxColumn.HeaderText = "ad";
+            this.adDataGridViewTextBoxColumn.Name = "adDataGridViewTextBoxColumn";
+            // 
+            // soyadDataGridViewTextBoxColumn
+            // 
+            this.soyadDataGridViewTextBoxColumn.DataPropertyName = "soyad";
+            this.soyadDataGridViewTextBoxColumn.HeaderText = "soyad";
+            this.soyadDataGridViewTextBoxColumn.Name = "soyadDataGridViewTextBoxColumn";
+            // 
+            // telefonDataGridViewTextBoxColumn
+            // 
+            this.telefonDataGridViewTextBoxColumn.DataPropertyName = "telefon";
+            this.telefonDataGridViewTextBoxColumn.HeaderText = "telefon";
+            this.telefonDataGridViewTextBoxColumn.Name = "telefonDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // plakaDataGridViewTextBoxColumn
+            // 
+            this.plakaDataGridViewTextBoxColumn.DataPropertyName = "plaka";
+            this.plakaDataGridViewTextBoxColumn.HeaderText = "plaka";
+            this.plakaDataGridViewTextBoxColumn.Name = "plakaDataGridViewTextBoxColumn";
+            // 
+            // markaDataGridViewTextBoxColumn
+            // 
+            this.markaDataGridViewTextBoxColumn.DataPropertyName = "marka";
+            this.markaDataGridViewTextBoxColumn.HeaderText = "marka";
+            this.markaDataGridViewTextBoxColumn.Name = "markaDataGridViewTextBoxColumn";
+            // 
+            // seriDataGridViewTextBoxColumn
+            // 
+            this.seriDataGridViewTextBoxColumn.DataPropertyName = "seri";
+            this.seriDataGridViewTextBoxColumn.HeaderText = "seri";
+            this.seriDataGridViewTextBoxColumn.Name = "seriDataGridViewTextBoxColumn";
+            // 
+            // renkDataGridViewTextBoxColumn
+            // 
+            this.renkDataGridViewTextBoxColumn.DataPropertyName = "renk";
+            this.renkDataGridViewTextBoxColumn.HeaderText = "renk";
+            this.renkDataGridViewTextBoxColumn.Name = "renkDataGridViewTextBoxColumn";
+            // 
+            // parkyeriDataGridViewTextBoxColumn
+            // 
+            this.parkyeriDataGridViewTextBoxColumn.DataPropertyName = "parkyeri";
+            this.parkyeriDataGridViewTextBoxColumn.HeaderText = "parkyeri";
+            this.parkyeriDataGridViewTextBoxColumn.Name = "parkyeriDataGridViewTextBoxColumn";
+            // 
+            // tarihDataGridViewTextBoxColumn
+            // 
+            this.tarihDataGridViewTextBoxColumn.DataPropertyName = "tarih";
+            this.tarihDataGridViewTextBoxColumn.HeaderText = "tarih";
+            this.tarihDataGridViewTextBoxColumn.Name = "tarihDataGridViewTextBoxColumn";
+            // 
+            // aracotoparkkaydiBindingSource
+            // 
+            this.aracotoparkkaydiBindingSource.DataMember = "arac_otopark_kaydi";
+            this.aracotoparkkaydiBindingSource.DataSource = this.aracotoparkDataSet1BindingSource;
+            // 
+            // aracotoparkDataSet1BindingSource
+            // 
+            this.aracotoparkDataSet1BindingSource.DataSource = this.arac_otoparkDataSet1;
+            this.aracotoparkDataSet1BindingSource.Position = 0;
+            // 
+            // arac_otoparkDataSet1
+            // 
+            this.arac_otoparkDataSet1.DataSetName = "arac_otoparkDataSet1";
+            this.arac_otoparkDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // arac_otoparkDataSet2
+            // 
+            this.arac_otoparkDataSet2.DataSetName = "arac_otoparkDataSet2";
+            this.arac_otoparkDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // aracotoparkDataSet2BindingSource
+            // 
+            this.aracotoparkDataSet2BindingSource.DataSource = this.arac_otoparkDataSet2;
+            this.aracotoparkDataSet2BindingSource.Position = 0;
+            // 
+            // arac_otopark_kaydiTableAdapter
+            // 
+            this.arac_otopark_kaydiTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnGuncelle
+            // 
+            this.btnGuncelle.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGuncelle.Appearance.Options.UseFont = true;
+            this.btnGuncelle.Location = new System.Drawing.Point(138, 368);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(94, 29);
+            this.btnGuncelle.TabIndex = 15;
+            this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
+            // 
+            // btnListele
+            // 
+            this.btnListele.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnListele.Appearance.Options.UseFont = true;
+            this.btnListele.Location = new System.Drawing.Point(405, 368);
+            this.btnListele.Name = "btnListele";
+            this.btnListele.Size = new System.Drawing.Size(150, 29);
+            this.btnListele.TabIndex = 16;
+            this.btnListele.Text = "Kayıtları Listele";
+            this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            this.simpleButton3.Location = new System.Drawing.Point(250, 368);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(94, 29);
+            this.simpleButton3.TabIndex = 17;
+            this.simpleButton3.Text = "Sil";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.BackColor = System.Drawing.Color.White;
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl1.Appearance.Options.UseBackColor = true;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(14, 327);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(739, 19);
+            this.labelControl1.TabIndex = 18;
+            this.labelControl1.Text = "Güncelle ve Sil özelliklerini kullanabilmek için Kayıtlar kısmında istediğiniz hü" +
+    "creye çift tıklayınız";
+            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click_1);
+            // 
             // frmAracOtoparkKaydi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateBlue;
-            this.ClientSize = new System.Drawing.Size(838, 403);
+            this.ClientSize = new System.Drawing.Size(841, 575);
+            this.Controls.Add(this.labelControl1);
+            this.Controls.Add(this.simpleButton3);
+            this.Controls.Add(this.btnListele);
+            this.Controls.Add(this.btnGuncelle);
+            this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.grupAraç);
@@ -358,7 +573,16 @@ namespace OtoparkOtomasyonu
             ((System.ComponentModel.ISupportInitialize)(this.grupAraç)).EndInit();
             this.grupAraç.ResumeLayout(false);
             this.grupAraç.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aracotoparkkaydiBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aracotoparkDataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arac_otoparkDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arac_otoparkDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aracotoparkDataSet2BindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -419,5 +643,28 @@ namespace OtoparkOtomasyonu
         private ComboBox comboSeri;
         private DevExpress.XtraEditors.SimpleButton btnSeri;
         private DevExpress.XtraEditors.SimpleButton btnMarka;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DataGridView dataGridView1;
+        private BindingSource aracotoparkDataSet1BindingSource;
+        private arac_otoparkDataSet1 arac_otoparkDataSet1;
+        private BindingSource aracotoparkDataSet2BindingSource;
+        private arac_otoparkDataSet2 arac_otoparkDataSet2;
+        private BindingSource aracotoparkkaydiBindingSource;
+        private arac_otoparkDataSet1TableAdapters.arac_otopark_kaydiTableAdapter arac_otopark_kaydiTableAdapter;
+        private DataGridViewTextBoxColumn tcDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn adDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn soyadDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn telefonDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn plakaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn markaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn seriDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn renkDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn parkyeriDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn tarihDataGridViewTextBoxColumn;
+        private DevExpress.XtraEditors.SimpleButton btnGuncelle;
+        private DevExpress.XtraEditors.SimpleButton btnListele;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }

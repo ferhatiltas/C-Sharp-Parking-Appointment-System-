@@ -59,6 +59,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>arac_otoparkDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="arac_otoparkDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arac_otoparkDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="arac_otoparkDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arac_otoparkDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmAnaSayfa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +154,28 @@
     </None>
     <None Include="arac_otoparkDataSet.xss">
       <DependentUpon>arac_otoparkDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="arac_otoparkDataSet1.xsc">
+      <DependentUpon>arac_otoparkDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="arac_otoparkDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arac_otoparkDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arac_otoparkDataSet1.xss">
+      <DependentUpon>arac_otoparkDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="arac_otoparkDataSet2.xsc">
+      <DependentUpon>arac_otoparkDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="arac_otoparkDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arac_otoparkDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arac_otoparkDataSet2.xss">
+      <DependentUpon>arac_otoparkDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

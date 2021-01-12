@@ -23,6 +23,10 @@ namespace OtoparkOtomasyonu
 
         private void frmAracOtoparkKaydi_Load(object sender, EventArgs e)
         {
+
+            // TODO: This line of code loads data into the 'arac_otoparkDataSet1.arac_otopark_kaydi' table. You can move, or remove it, as needed.
+            this.arac_otopark_kaydiTableAdapter.Fill(this.arac_otoparkDataSet1.arac_otopark_kaydi);
+
             BosAraclar();
 
             Marka();
@@ -79,7 +83,7 @@ namespace OtoparkOtomasyonu
             SqlCommand komut2 = new SqlCommand("update arac_durumu set durumu ='DOLU' WHERE parkyeri ='"+comboParkYeri.SelectedItem+"'",baglanti);
             komut2.ExecuteNonQuery();
             baglanti.Close();
-            MessageBox.Show("Araç kaydı başarıyla oluşturuldu.","Kayıt");
+            MessageBox.Show("Araç kaydı başarıyla oluşturuldu. Listelemek için Kayıtları Listele butonuna tıklayınız.","Kayıt");
             comboParkYeri.Items.Clear();
             BosAraclar();
             comboMarka.Items.Clear();
@@ -134,6 +138,59 @@ namespace OtoparkOtomasyonu
             }
             baglanti.Close();
 
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Herhangi bir hücreye tıklanıldığında bilgileri aktarıp güncelleme yapacağım
+
+            int secilen = dataGridView1.SelectedCells[0].RowIndex;
+
+            txtTc.Text = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
+            txtAd.Text = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
+            txtSoyad.Text = dataGridView1.Rows[secilen].Cells[2].Value.ToString();
+            txtTelefon.Text = dataGridView1.Rows[secilen].Cells[3].Value.ToString();
+            txtEmail.Text = dataGridView1.Rows[secilen].Cells[4].Value.ToString();
+           
+        }
+
+        private void btnListele_Click(object sender, EventArgs e)
+        {
+            this.arac_otopark_kaydiTableAdapter.Fill(this.arac_otoparkDataSet1.arac_otopark_kaydi);
+
+        }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+
+            SqlCommand komutsil = new SqlCommand("Delete from arac_otopark_kaydi where tc=@tc1 ", baglanti);
+            komutsil.Parameters.AddWithValue("@tc1", txtTc.Text);
+            komutsil.ExecuteNonQuery();
+
+            baglanti.Close();
+            MessageBox.Show("Kayıt silindi. Kayıtları listelemek için Kayıtları Listele butonuna tıklayınız.");
+        }
+
+        private void labelControl1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+
+            SqlCommand komutGuncelle = new SqlCommand("update arac_otopark_kaydi set ad=@a1,soyad=@a2,telefon=@a3,email=@a4 where tc=@a5", baglanti);
+            komutGuncelle.Parameters.AddWithValue("@a1", txtAd.Text);
+            komutGuncelle.Parameters.AddWithValue("@a2", txtSoyad.Text);
+            komutGuncelle.Parameters.AddWithValue("@a3", txtTelefon.Text);
+            komutGuncelle.Parameters.AddWithValue("@a4", txtEmail.Text);
+            komutGuncelle.Parameters.AddWithValue("@a5", txtTc.Text);
+            komutGuncelle.ExecuteNonQuery();
+
+            baglanti.Close();
+            MessageBox.Show("Kayıt güncellendi. Listelemek için Kayıtları Listele butonuna tıklayınız.");
         }
     }
 }

@@ -122,5 +122,15 @@ namespace OtoparkOtomasyonu
         {
 
         }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simpleButton9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

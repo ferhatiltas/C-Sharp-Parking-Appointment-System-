@@ -82,42 +82,42 @@
             // 
             // txtParkYeri
             // 
-            this.txtParkYeri.Location = new System.Drawing.Point(116, 77);
+            this.txtParkYeri.Location = new System.Drawing.Point(154, 99);
             this.txtParkYeri.Name = "txtParkYeri";
             this.txtParkYeri.Size = new System.Drawing.Size(125, 22);
             this.txtParkYeri.TabIndex = 0;
             // 
             // txtParkYeri2
             // 
-            this.txtParkYeri2.Location = new System.Drawing.Point(133, 87);
+            this.txtParkYeri2.Location = new System.Drawing.Point(156, 81);
             this.txtParkYeri2.Name = "txtParkYeri2";
             this.txtParkYeri2.Size = new System.Drawing.Size(125, 22);
             this.txtParkYeri2.TabIndex = 1;
             // 
             // txtTc
             // 
-            this.txtTc.Location = new System.Drawing.Point(133, 128);
+            this.txtTc.Location = new System.Drawing.Point(156, 123);
             this.txtTc.Name = "txtTc";
             this.txtTc.Size = new System.Drawing.Size(125, 22);
             this.txtTc.TabIndex = 2;
             // 
             // txtAd
             // 
-            this.txtAd.Location = new System.Drawing.Point(133, 169);
+            this.txtAd.Location = new System.Drawing.Point(156, 165);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(125, 22);
             this.txtAd.TabIndex = 3;
             // 
             // txtSoyad
             // 
-            this.txtSoyad.Location = new System.Drawing.Point(420, 42);
+            this.txtSoyad.Location = new System.Drawing.Point(441, 37);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(125, 22);
             this.txtSoyad.TabIndex = 4;
             // 
             // txtMarka
             // 
-            this.txtMarka.Location = new System.Drawing.Point(420, 83);
+            this.txtMarka.Location = new System.Drawing.Point(441, 78);
             this.txtMarka.Name = "txtMarka";
             this.txtMarka.Size = new System.Drawing.Size(125, 22);
             this.txtMarka.TabIndex = 5;
@@ -125,16 +125,16 @@
             // comboPlaka
             // 
             this.comboPlaka.FormattingEnabled = true;
-            this.comboPlaka.Location = new System.Drawing.Point(116, 45);
+            this.comboPlaka.Location = new System.Drawing.Point(154, 47);
             this.comboPlaka.Name = "comboPlaka";
-            this.comboPlaka.Size = new System.Drawing.Size(127, 24);
+            this.comboPlaka.Size = new System.Drawing.Size(125, 24);
             this.comboPlaka.TabIndex = 6;
             this.comboPlaka.SelectedIndexChanged += new System.EventHandler(this.comboPlaka_SelectedIndexChanged);
             // 
             // comboParkYeri
             // 
             this.comboParkYeri.FormattingEnabled = true;
-            this.comboParkYeri.Location = new System.Drawing.Point(133, 44);
+            this.comboParkYeri.Location = new System.Drawing.Point(155, 37);
             this.comboParkYeri.Name = "comboParkYeri";
             this.comboParkYeri.Size = new System.Drawing.Size(127, 24);
             this.comboParkYeri.TabIndex = 7;
@@ -142,103 +142,126 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(18, 44);
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl1.LineStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.labelControl1.Location = new System.Drawing.Point(20, 44);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(83, 19);
+            this.labelControl1.Size = new System.Drawing.Size(122, 25);
             this.labelControl1.TabIndex = 8;
             this.labelControl1.Text = "Plaka Ara :";
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(18, 80);
+            this.labelControl2.Appearance.Options.UseForeColor = true;
+            this.labelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl2.LineStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.labelControl2.Location = new System.Drawing.Point(20, 94);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(83, 19);
+            this.labelControl2.Size = new System.Drawing.Size(118, 25);
             this.labelControl2.TabIndex = 9;
             this.labelControl2.Text = "Park Yeri :";
             // 
             // labelControl3
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(32, 46);
+            this.labelControl3.Appearance.Options.UseForeColor = true;
+            this.labelControl3.Location = new System.Drawing.Point(20, 32);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(83, 19);
+            this.labelControl3.Size = new System.Drawing.Size(118, 25);
             this.labelControl3.TabIndex = 10;
             this.labelControl3.Text = "Park Yeri :";
             // 
             // labelControl4
             // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(32, 88);
+            this.labelControl4.Appearance.Options.UseForeColor = true;
+            this.labelControl4.Location = new System.Drawing.Point(20, 74);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(83, 19);
+            this.labelControl4.Size = new System.Drawing.Size(118, 25);
             this.labelControl4.TabIndex = 11;
             this.labelControl4.Text = "Park Yeri :";
             // 
             // labelControl5
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl5.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(83, 130);
+            this.labelControl5.Appearance.Options.UseForeColor = true;
+            this.labelControl5.Location = new System.Drawing.Point(95, 119);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(32, 19);
+            this.labelControl5.Size = new System.Drawing.Size(43, 25);
             this.labelControl5.TabIndex = 12;
             this.labelControl5.Text = "TC :";
             // 
             // labelControl6
             // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(72, 172);
+            this.labelControl6.Appearance.Options.UseForeColor = true;
+            this.labelControl6.Location = new System.Drawing.Point(72, 162);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(43, 19);
+            this.labelControl6.Size = new System.Drawing.Size(66, 25);
             this.labelControl6.TabIndex = 13;
             this.labelControl6.Text = "İsim :";
             // 
             // labelControl7
             // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(333, 46);
+            this.labelControl7.Appearance.Options.UseForeColor = true;
+            this.labelControl7.Location = new System.Drawing.Point(321, 32);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(69, 19);
+            this.labelControl7.Size = new System.Drawing.Size(103, 25);
             this.labelControl7.TabIndex = 14;
             this.labelControl7.Text = "Soyisim :";
             // 
             // labelControl8
             // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(343, 88);
+            this.labelControl8.Appearance.Options.UseForeColor = true;
+            this.labelControl8.Location = new System.Drawing.Point(341, 74);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(59, 19);
+            this.labelControl8.Size = new System.Drawing.Size(83, 25);
             this.labelControl8.TabIndex = 15;
             this.labelControl8.Text = "Marka :";
             // 
             // labelControl9
             // 
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl9.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(361, 125);
+            this.labelControl9.Appearance.Options.UseForeColor = true;
+            this.labelControl9.Location = new System.Drawing.Point(365, 116);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(41, 19);
+            this.labelControl9.Size = new System.Drawing.Size(59, 25);
             this.labelControl9.TabIndex = 17;
             this.labelControl9.Text = "Seri :";
             // 
             // txtSeri
             // 
-            this.txtSeri.Location = new System.Drawing.Point(420, 124);
+            this.txtSeri.Location = new System.Drawing.Point(441, 119);
             this.txtSeri.Name = "txtSeri";
             this.txtSeri.Size = new System.Drawing.Size(125, 22);
             this.txtSeri.TabIndex = 16;
             // 
             // groupControl1
             // 
+            this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.txtParkYeri);
             this.groupControl1.Controls.Add(this.comboPlaka);
@@ -251,6 +274,7 @@
             // 
             // groupControl2
             // 
+            this.groupControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.groupControl2.Controls.Add(this.labelControl10);
             this.groupControl2.Controls.Add(this.txtpPlaka);
             this.groupControl2.Controls.Add(this.txtTc);
@@ -269,29 +293,33 @@
             this.groupControl2.Controls.Add(this.labelControl4);
             this.groupControl2.Location = new System.Drawing.Point(24, 191);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(624, 237);
+            this.groupControl2.Size = new System.Drawing.Size(624, 234);
             this.groupControl2.TabIndex = 19;
             this.groupControl2.Text = "groupControl2";
+            this.groupControl2.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl2_Paint);
             // 
             // labelControl10
             // 
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(361, 168);
+            this.labelControl10.Appearance.Options.UseForeColor = true;
+            this.labelControl10.Location = new System.Drawing.Point(348, 158);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(52, 19);
+            this.labelControl10.Size = new System.Drawing.Size(76, 25);
             this.labelControl10.TabIndex = 19;
             this.labelControl10.Text = "Plaka :";
             // 
             // txtpPlaka
             // 
-            this.txtpPlaka.Location = new System.Drawing.Point(420, 167);
+            this.txtpPlaka.Location = new System.Drawing.Point(441, 162);
             this.txtpPlaka.Name = "txtpPlaka";
             this.txtpPlaka.Size = new System.Drawing.Size(125, 22);
             this.txtpPlaka.TabIndex = 18;
             // 
             // groupControl3
             // 
+            this.groupControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.groupControl3.Controls.Add(this.labelControl15);
             this.groupControl3.Controls.Add(this.lblToplamUcret);
             this.groupControl3.Controls.Add(this.lblSure);
@@ -303,7 +331,7 @@
             this.groupControl3.Controls.Add(this.labelControl11);
             this.groupControl3.Location = new System.Drawing.Point(352, 12);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(296, 157);
+            this.groupControl3.Size = new System.Drawing.Size(296, 196);
             this.groupControl3.TabIndex = 20;
             this.groupControl3.Text = "Ücretlendirme";
             this.groupControl3.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl3_Paint);
@@ -314,7 +342,7 @@
             this.labelControl15.Appearance.ForeColor = System.Drawing.Color.Red;
             this.labelControl15.Appearance.Options.UseFont = true;
             this.labelControl15.Appearance.Options.UseForeColor = true;
-            this.labelControl15.Location = new System.Drawing.Point(251, 125);
+            this.labelControl15.Location = new System.Drawing.Point(196, 153);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(21, 19);
             this.labelControl15.TabIndex = 8;
@@ -326,7 +354,7 @@
             this.lblToplamUcret.Appearance.ForeColor = System.Drawing.Color.Red;
             this.lblToplamUcret.Appearance.Options.UseFont = true;
             this.lblToplamUcret.Appearance.Options.UseForeColor = true;
-            this.lblToplamUcret.Location = new System.Drawing.Point(131, 125);
+            this.lblToplamUcret.Location = new System.Drawing.Point(200, 118);
             this.lblToplamUcret.Name = "lblToplamUcret";
             this.lblToplamUcret.Size = new System.Drawing.Size(12, 19);
             this.lblToplamUcret.TabIndex = 7;
@@ -338,7 +366,7 @@
             this.lblSure.Appearance.ForeColor = System.Drawing.Color.Red;
             this.lblSure.Appearance.Options.UseFont = true;
             this.lblSure.Appearance.Options.UseForeColor = true;
-            this.lblSure.Location = new System.Drawing.Point(131, 94);
+            this.lblSure.Location = new System.Drawing.Point(200, 83);
             this.lblSure.Name = "lblSure";
             this.lblSure.Size = new System.Drawing.Size(12, 19);
             this.lblSure.TabIndex = 6;
@@ -351,7 +379,7 @@
             this.lblCikisTarihi.Appearance.ForeColor = System.Drawing.Color.Red;
             this.lblCikisTarihi.Appearance.Options.UseFont = true;
             this.lblCikisTarihi.Appearance.Options.UseForeColor = true;
-            this.lblCikisTarihi.Location = new System.Drawing.Point(131, 63);
+            this.lblCikisTarihi.Location = new System.Drawing.Point(200, 48);
             this.lblCikisTarihi.Name = "lblCikisTarihi";
             this.lblCikisTarihi.Size = new System.Drawing.Size(12, 19);
             this.lblCikisTarihi.TabIndex = 5;
@@ -363,7 +391,7 @@
             this.lblGelisTarihi.Appearance.ForeColor = System.Drawing.Color.Red;
             this.lblGelisTarihi.Appearance.Options.UseFont = true;
             this.lblGelisTarihi.Appearance.Options.UseForeColor = true;
-            this.lblGelisTarihi.Location = new System.Drawing.Point(131, 32);
+            this.lblGelisTarihi.Location = new System.Drawing.Point(200, 13);
             this.lblGelisTarihi.Name = "lblGelisTarihi";
             this.lblGelisTarihi.Size = new System.Drawing.Size(12, 19);
             this.lblGelisTarihi.TabIndex = 4;
@@ -371,62 +399,72 @@
             // 
             // labelControl14
             // 
-            this.labelControl14.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.labelControl14.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl14.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Location = new System.Drawing.Point(13, 125);
+            this.labelControl14.Appearance.Options.UseForeColor = true;
+            this.labelControl14.Location = new System.Drawing.Point(5, 148);
             this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(112, 19);
+            this.labelControl14.Size = new System.Drawing.Size(165, 25);
             this.labelControl14.TabIndex = 3;
             this.labelControl14.Text = "Toplam Ücret :";
             // 
             // labelControl13
             // 
-            this.labelControl13.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.labelControl13.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl13.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Location = new System.Drawing.Point(81, 94);
+            this.labelControl13.Appearance.Options.UseForeColor = true;
+            this.labelControl13.Location = new System.Drawing.Point(104, 101);
             this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(44, 19);
+            this.labelControl13.Size = new System.Drawing.Size(66, 25);
             this.labelControl13.TabIndex = 2;
             this.labelControl13.Text = "Süre :";
             // 
             // labelControl12
             // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl12.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Location = new System.Drawing.Point(24, 63);
+            this.labelControl12.Appearance.Options.UseForeColor = true;
+            this.labelControl12.Location = new System.Drawing.Point(30, 54);
             this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(101, 19);
+            this.labelControl12.Size = new System.Drawing.Size(140, 25);
             this.labelControl12.TabIndex = 1;
             this.labelControl12.Text = "Çıkış Tarihi :";
             // 
             // labelControl11
             // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl11.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(23, 32);
+            this.labelControl11.Appearance.Options.UseForeColor = true;
+            this.labelControl11.Location = new System.Drawing.Point(28, 7);
             this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(102, 19);
+            this.labelControl11.Size = new System.Drawing.Size(142, 25);
             this.labelControl11.TabIndex = 0;
             this.labelControl11.Text = "Geliş Tarihi :";
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.simpleButton1.Location = new System.Drawing.Point(244, 452);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(113, 29);
+            this.simpleButton1.Size = new System.Drawing.Size(129, 37);
             this.simpleButton1.TabIndex = 21;
             this.simpleButton1.Text = "Araç Çıkışı";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold);
+            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.simpleButton2.Appearance.Options.UseFont = true;
+            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.simpleButton2.Location = new System.Drawing.Point(384, 452);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(94, 29);
+            this.simpleButton2.Size = new System.Drawing.Size(110, 37);
             this.simpleButton2.TabIndex = 22;
             this.simpleButton2.Text = "Geri";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
@@ -439,13 +477,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(697, 528);
             this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAracOtoparkCikisi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Araç Otopark Çıkışı";

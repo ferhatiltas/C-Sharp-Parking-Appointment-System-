@@ -40,7 +40,7 @@
             // 
             this.simpleButtonSeri.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.simpleButtonSeri.Appearance.Options.UseFont = true;
-            this.simpleButtonSeri.Location = new System.Drawing.Point(205, 120);
+            this.simpleButtonSeri.Location = new System.Drawing.Point(238, 129);
             this.simpleButtonSeri.Name = "simpleButtonSeri";
             this.simpleButtonSeri.Size = new System.Drawing.Size(94, 29);
             this.simpleButtonSeri.TabIndex = 8;
@@ -49,17 +49,19 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.Location = new System.Drawing.Point(103, 78);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(35, 17);
+            this.labelControl1.Size = new System.Drawing.Size(59, 25);
             this.labelControl1.TabIndex = 7;
             this.labelControl1.Text = "Seri :";
             // 
             // textEditseri
             // 
-            this.textEditseri.Location = new System.Drawing.Point(154, 80);
+            this.textEditseri.Location = new System.Drawing.Point(187, 83);
             this.textEditseri.Name = "textEditseri";
             this.textEditseri.Size = new System.Drawing.Size(145, 22);
             this.textEditseri.TabIndex = 6;
@@ -67,18 +69,20 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(154, 32);
+            this.comboBox1.Location = new System.Drawing.Point(187, 39);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(145, 24);
             this.comboBox1.TabIndex = 9;
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Appearance.Options.UseForeColor = true;
             this.labelControl2.Location = new System.Drawing.Point(85, 34);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(53, 17);
+            this.labelControl2.Size = new System.Drawing.Size(83, 25);
             this.labelControl2.TabIndex = 10;
             this.labelControl2.Text = "Marka :";
             // 
@@ -86,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.Navy;
             this.ClientSize = new System.Drawing.Size(406, 223);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.comboBox1);

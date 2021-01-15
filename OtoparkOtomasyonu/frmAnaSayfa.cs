@@ -29,20 +29,44 @@ namespace OtoparkOtomasyonu
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
+            panelAnaSayfa.Controls.Clear();
             frmAracOtoparkCikisi cikis = new frmAracOtoparkCikisi();
-            cikis.ShowDialog();
-        }
+            cikis.TopLevel = false;
 
+
+            panelAnaSayfa.Controls.Add(cikis);
+            cikis.Show();
+            cikis.Dock = DockStyle.Fill;
+            cikis.BringToFront();
+        }
+        
         private void simpleButton1_Click(object sender, EventArgs e)
         {
+             
+
+
+            panelAnaSayfa.Controls.Clear();
             frmAracOtoparkKaydi kayit = new frmAracOtoparkKaydi();
-            kayit.ShowDialog();
+            kayit.TopLevel = false;
+
+           
+            panelAnaSayfa.Controls.Add(kayit);
+            kayit.Show();
+            kayit.Dock = DockStyle.Fill;
+            kayit.BringToFront();
         }
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
+            panelAnaSayfa.Controls.Clear();
             frmAracOtoparkYerleri yer = new frmAracOtoparkYerleri();
-            yer.ShowDialog();
+            yer.TopLevel = false;
+
+
+            panelAnaSayfa.Controls.Add(yer);
+            yer.Show();
+            yer.Dock = DockStyle.Fill;
+            yer.BringToFront();
         }
 
         private void simpleButton4_Click(object sender, EventArgs e)
@@ -52,11 +76,23 @@ namespace OtoparkOtomasyonu
 
         private void satisListelemeSayfasi_Click(object sender, EventArgs e)
         {
-            frmSatis satis = new frmSatis();
-            satis.ShowDialog();
+            panelAnaSayfa.Controls.Clear();
+            frmSatis satiss = new frmSatis();
+            satiss.TopLevel = false;
+
+
+            panelAnaSayfa.Controls.Add(satiss);
+            satiss.Show();
+            satiss.Dock = DockStyle.Fill;
+            satiss.BringToFront();
         }
 
         private void pictureEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelAna_Paint(object sender, PaintEventArgs e)
         {
 
         }
